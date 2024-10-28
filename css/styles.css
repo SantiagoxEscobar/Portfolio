@@ -8,7 +8,7 @@ header{
 }
 main{
     background-color: #ffffff;
-    padding: 2rem;
+    margin: 1rem;
     text-align: center;
 }
 footer{
@@ -24,4 +24,32 @@ footer{
     color: rgb(140, 140, 141);
     margin: 0.5rem;
     font-size: 0.8rem;
+}
+#home{
+    padding: 2rem;
+    text-align: center;
+}
+#about_me{
+    padding: 2rem;
+    text-align: center;
+}
+#projects{
+    padding: 2rem;
+    text-align: center;
+}
+#contact{
+    padding: 2rem;
+    text-align: center;
+}
+#home span{
+    color: rgb(229, 96, 0);
+}
+.round_image{
+    display: inline-block;
+    margin: 1rem;
+}
+.round_image img{
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
 }
