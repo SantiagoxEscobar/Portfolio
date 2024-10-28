@@ -10,32 +10,45 @@
 </head>
 <body>
     <header>
-        <nav id="navWeb" class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <nav id="navWeb" class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  <a class="nav-link" href="#">Sobre mi</a>
-                  <a class="nav-link" href="#">Proyectos</a>
-                  <a class="nav-link" href="#">Contacto</a>
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">About Me</a>
+                  <a class="nav-link" href="#">Projects</a>
+                  <a class="nav-link" href="#">Contact</a>
                 </div>
               </div>
             </div>
         </nav>
     </header>
     <main>
-        <article>
-            <h2>Sobre mi</h2>
-            <p>¡Hola! Mi nombre es <strong>Santiago</strong> y soy un desarrollador web de Argentina. Me encanta programar y crear cosas nuevas. Actualmente estoy aprendiendo <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong>.</p>
-            <h2>Proyectos</h2>
-            <ul>
-                <li><a href="https://github.com/SantiagoxEscobar/InvestigacionDeepLearning">Proyecto 1</a></li>               
-        </article>    </main>
+      <section class="container" id="home">   
+        <img src="https://i.imgur.com/ugobUkr.png" alt="profile_picture" width="150" height="150">
+        <h1>Hi, My name is Santiago</h1>
+        <p>I'm a full stack web developer. I love programming and creating new things.</p>
+      </section>
+      <section class="container" id="about_me">
+        <h2 class="about_me_section">Sobre mi</h2>
+      </section>
+      <section class="container" id="projects">
+        <h2 class="projects_section">Projects</h2>
+      </section>
+      <section class="container" id="contact">
+        <h2 class="contact_section">Contact</h2>
+      </section>  
+    </main>
     <footer>
-        <p>Hecho con ❤️ por mi</p>
+      <div class="container" id="footer">
+        <a href="mailto:santiago.escobar97@gmail.com?"><img src="https://s.magecdn.com/social/24w/tc-mail.png" alt="mail"></a>
+        <a href="https://github.com/SantiagoxEscobar"><img src="https://s.magecdn.com/social/24w/tc-github.png" alt="github"></a>
+        <a href="https://www.linkedin.com/in/santiagoxescobar/"><img src="https://s.magecdn.com/social/24w/tc-linkedin.png" alt="linkedin"></a>
+        <p class="copyright">Santiago Escobar @2024</p>
+      </div>
     </footer>
 </body>
 </html>
