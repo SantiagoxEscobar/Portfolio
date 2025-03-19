@@ -33,8 +33,17 @@ footer{
     text-align: center;
 }
 #about_me{
-    padding: 2rem;
+    background-image: url("https://png.pngtree.com/background/20240412/original/pngtree-d-render-of-modern-dark-office-room-with-ample-copy-space-picture-image_8464664.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 9rem;
     text-align: center;
+}
+.about_me_paragraph {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
 }
 #projects{
     padding: 2rem;
