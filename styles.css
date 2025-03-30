@@ -3,7 +3,7 @@ header{
 }
 .nav-link{
     color: black;
-    font-size: 1rem;
+    font-size: 1.4rem;
     padding: 0.5rem;
     
 }
@@ -33,18 +33,44 @@ footer{
     text-align: center;
 }
 #about_me{
-    background-color: rgba(0, 0, 0, 0.980);
+    background-color: rgba(240, 108, 59);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 8rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+.about_me_row .about_me_col {
+    margin-top: 2rem;
+    text-align: left;
+}
+.about_me_paragraph {
+    margin-top: 3.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+.about_me_image {
+    margin-top: 2rem;
+    text-align: center;
+}
+.about_me_image img {
+    width: 96%;
+    height: auto;
+    border-radius: 2rem;
+}
+#skills{
+    background-color: rgba(240, 108, 59);
     background: linear-gradient(to bottom, rgba(240, 108, 59), rgba(240, 108, 59, 0.90));
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    padding: 9rem;
+    padding-top: 6rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 6rem;
     text-align: center;
-}
-.about_me_paragraph {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: white;
 }
 #projects{
     padding: 2rem;
@@ -58,13 +84,15 @@ footer{
     color: rgb(240, 108, 59);
 }
 .round_image{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 1rem;
 }
 .round_image img{
     border-radius: 50%;
-    height: 15rem;
-    width: 15rem;
+    width: 26rem;
+    height: auto;
 }
 #home span{
     color: rgb(240, 108, 59);
@@ -73,6 +101,7 @@ footer{
     color: #cccccc;
 }
 .btn-bd-primary {
+    --bs-btn-font-size: 1.1rem;
     --bs-btn-font-weight: 600;
     --bs-btn-color: var(--bs-white);
     --bs-btn-bg: rgb(240, 108, 59);
