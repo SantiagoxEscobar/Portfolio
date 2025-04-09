@@ -32,6 +32,9 @@ footer{
     padding: 9rem;
     text-align: center;
 }
+.h1, h1 {
+    font-size: 4rem;
+}
 #about_me{
     background-color: rgba(240, 108, 59);
     background-size: cover;
@@ -71,6 +74,14 @@ footer{
     padding-right: 10%;
     padding-bottom: 6rem;
     text-align: center;
+}
+.logo{
+    width: 33.3%;
+}
+.card-body img{
+    padding: 0.5rem;
+    width: 50%;
+    min-width: 3rem;
 }
 #projects{
     padding: 2rem;
