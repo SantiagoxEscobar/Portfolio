@@ -7,83 +7,98 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css"/>
+    <script src="main.js"></script>
 </head>
 <body>
     <header>
         <nav id="navWeb" class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" id="nav_home" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">About Me</a>
-                  <a class="nav-link" href="#">Projects</a>
-                  <a class="nav-link" href="#">Contact</a>
-                </div>
+          <div class="container-fluid">
+            <!-- Botón hamburguesa y marca -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenido colapsable + botón PDF -->
+            <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" id="nav_home" aria-current="page" href="#home">Home</a>
+<a class="nav-link" href="#about_me">About Me</a>
+<a class="nav-link" href="#projects">Projects</a>
+<a class="nav-link" href="#contact">Contact</a>
+              </div>
+
+              <!-- Botón PDF Resume (desktop y mobile) -->
+              <div class="ms-lg-auto mt-2 mt-lg-0">
+                <button type="button" class="btn btn-bd-primary" onclick="window.open('https://drive.google.com/file/d/1VLOQStMP_3AvVPZWyfRSO4rZ1yE347rP/view?usp=sharing', '_blank');">
+                  PDF Resume
+                </button>
               </div>
             </div>
-            <div class="container-fluid justify-content-end">
-              <button type="button" class="btn btn-bd-primary" onclick="window.open('https://drive.google.com/file/d/1VLOQStMP_3AvVPZWyfRSO4rZ1yE347rP/view?usp=sharing', '_blank');">PDF Resume</button>
-            </div>
+          </div>
         </nav>
     </header>
     <main>
-      <section class="containter-fluid" id="home">
+      <section class="container-fluid" id="home">
         <div class="round_image">
           <img src="https://avatars.githubusercontent.com/u/123908901?s=400&u=485da59224abc2d3e657e6ffd961d02433924a56&v=4" alt="profile_picture">
         </div>
         <h1>Hi, my name is <span>Santiago</span></h1>
         <p><strong>I'm a full stack web developer.</strong> I love programming and creating new things.</p>
-        <button type="button" class="btn btn-bd-primary" src=>View my work</button>
+        <button type="button" class="btn btn-bd-primary" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">View my work</button>
+
       </section>
       <section class="container-fluid" id="about_me">
+  <div class="row">
+    <h1>About Me</h1>
+  </div>
+  <div class="card about_me_card text-white">
+  <div class="row about_me_row align-items-center">
+    <div class="col-sm-12 col-md-6 about_me_col">
+      <div class="about_me_image">
+        <img src="https://img.freepik.com/fotos-premium/escena-intima-oficina-casa-tarde-noche_1093726-25567.jpg" alt="Desk Image">
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 about_me_col">
+      <p class="about_me_paragraph">
+        Passionate about web development,
+        I am a Programming Technician from UTN Buenos Aires Argentina,
+        I am currently specializing in NET.
+        I also have experience in DDBB structures and web application architecture layers
+      </p>
+    </div>
+  </div>
+  <div class="row about_me_row align-items-center">
+    <div class="col-sm-12 col-md-6 about_me_col order-md-2">
+      <div class="about_me_image">
+        <img src="https://img.freepik.com/fotos-premium/muebles-arquitectura-perros_53876-211935.jpg" alt="Dog Image">
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 about_me_col order-md-1">
+      <p class="about_me_paragraph">
+        My focus is on continuous learning and constant improvement of my skills,
+        I look for challenges that allow me to grow professionally and contribute to the success of web projects.
+      </p>
+    </div>
+  </div>
+  <div class="row p-2">
+    <div class="col">
+      <p class="about_me_paragraph text-center">
+        <strong> Let's explore the possibilities together! </strong>
+      </p>
+    </div>
+  </div>
+  </div>
+</section>
+      <section id="skills" class="container-fluid">
+        <h1>Skills</h1>
+        
         <div class="row">
-          <h1>About Me</h1>
-        </div>
-        <div class="row about_me_row">
-          <div class="col-sm-12 col-md-6 about_me_col">
-            <div class="about_me_image">
-                <img src="https://img.freepik.com/vector-gratis/ilustracion-escena-dia-trabajo-dibujos-animados_52683-62609.jpg?t=st=1743362011~exp=1743365611~hmac=1af201416a4aea30db844ce4467f4e6488ddcf954ed26f0845e3e03e2f3b4dea&w=996" alt="Desk Image">
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 about_me_col">
-              <p class="about_me_paragraph">
-                  Passionate about web development,
-                  I am a Programming Technician from UTN Buenos Aires Argentina,
-                  I am currently specializing in NET.
-                  I also have experience in DDBB structures and web application architecture layers
-              </p>
-              <p class="about_me_paragraph">
-                  My focus is on continuous learning and constant improvement of my skills,
-                  I look for challenges that allow me to grow professionally and contribute to the success of web projects.
-              </p>
-              <p class="about_me_paragraph">
-                  <strong> Let's explore the possibilities together! </strong>
-              </p>
-          </div>
-        </div>   
-      </section>
-      <section class="container-fluid" id="skills">       
-        <div class="row">
-          <div class="card text-bg-dark mb-3 p-5">
-            <h1>Skills</h1>
-            <div class="card-header"> 
-              <div class="row pt-3">
-                <div class="col">
-                  <h2 class="card-title">Back End</h2>
-                </div>
-                <div class="col">
-                  <h2 class="card-title">Front End</h2>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="row">
-                <div class="col">
-                  <div class="row">
-                    <div class="logo">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="skills-category-card">
+              <h2>Back End</h2>
+              <div class="skills-grid">
+                <div class="logo">
                       <img src="https://images.icon-icons.com/2415/PNG/512/csharp_original_logo_icon_146578.png" alt="C#">
                       <p>C#</p>
                     </div>
@@ -100,18 +115,22 @@
                       <p>SQL Server</p>
                     </div>
                     <div class="logo">
-                      <img src="https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png" alt="Swagger">
+                      <img src="https://i.imgur.com/Ojo0aXw.png" alt="Swagger">
                       <p>Swagger</p>
                     </div>
                     <div class="logo">
                       <img src="https://nocodestartup.io/wp-content/uploads/2024/01/postman-nocode.webp" alt="Postman">
                       <p>Postman</p>
                     </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="row">
-                    <div class="logo">
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="skills-category-card">
+              <h2>Front End</h2>
+              <div class="skills-grid">
+                <div class="logo">
                       <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-512.png" alt="HTML">
                       <p>HTML</p>
                     </div>
@@ -135,18 +154,15 @@
                       <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Blazor.png" alt="Blazor">
                       <p>Blazor</p>
                     </div>
-                  </div>
-                </div>
               </div>
-              <div class="row">
-                <div class="card-header"> 
-                  <h2 class="card-title pt-3">Others</h2>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="row">
-                    <div class="logo">
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="skills-category-card">
+              <h2>Others</h2>
+              <div class="skills-grid">
+                <div class="logo">
                       <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png" alt="Docker">
                       <p>Docker</p>
                     </div>
@@ -158,18 +174,109 @@
                       <img src="https://img.icons8.com/ios11/512/FFFFFF/github.png" alt="Github">
                       <p>Github</p>
                     </div>
-                  </div>
-                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="container" id="projects">
-        <h2 class="projects_section">Projects</h2>
-      </section>
-      <section class="container" id="contact">
-        <h2 class="contact_section">Contact</h2>
-      </section>  
+<section class="container-fluid" id="projects">
+  <h1>Projects</h1>
+
+  <div class="row gy-5">
+    <!-- Project Card 1 -->
+    <div class="col-12 col-md-6">
+      <div class="project-card card h-100">
+        <div class="row g-0">
+          <div class="col-12 project-image-container">
+            <img src="https://via.placeholder.com/600x300" class="img-fluid project-image" alt="Project Image">
+          </div>
+          <div class="col-12">
+            <div class="card-body">
+              <h3 class="project-title">Waiter Table System</h3>
+              <p class="project-description">
+                The Waiter Table System is a digital solution for restaurant staff. 
+                It lets waiters log in, manage table status, set guest counts, assign staff, and process orders efficiently.
+              </p>
+              <p><strong>Teamwork:</strong> Two-person collaboration. </p>
+              <p><strong>Technologies:</strong> .NET Framework, C#, HTML, CSS, JavaScript, Bootstrap, and MySQL.</p>
+              <p><strong>My tasks:</strong> ASP.NET Web Forms Developmen, Authentication and Security, Application Logic & Validation, Database Interaction</p>
+              <p><strong>Duration:</strong> 1 month</p>
+              <div class="project-links mt-3">
+                <a href="#" target="_blank" class="btn btn-sm btn-outline-light me-2">🎥 Demo</a>
+                <a href="#" target="_blank" class="btn btn-sm btn-outline-light">💻 Repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div class="col-12 col-md-6">
+      <div class="project-card card h-100">
+        <div class="row g-0">
+          <div class="col-12 project-image-container">
+            <img src="https://via.placeholder.com/600x300" class="img-fluid project-image" alt="Project Image">
+          </div>
+          <div class="col-12">
+            <div class="card-body">
+              <h3 class="project-title">Task Tracker</h3>
+              <p class="project-description">
+                Simple app to organize and prioritize daily tasks.
+              </p>
+              <p><strong>Teamwork:</strong> Solo project</p>
+              <p><strong>Technologies:</strong> Blazor, C#, SQLite</p>
+              <p><strong>My tasks:</strong> UI with Blazor, CRUD logic, data persistence</p>
+              <p><strong>Duration:</strong> 1 month</p>
+              <div class="project-links mt-3">
+                <a href="#" target="_blank" class="btn btn-sm btn-outline-light me-2">🎥 Demo</a>
+                <a href="#" target="_blank" class="btn btn-sm btn-outline-light">💻 Repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Más tarjetas iguales abajo -->
+  </div>
+  <div class="mt-4 text-center">
+  <button id="backToTopBtn" class="btn btn-bd-primary">Back to Top</button>
+</div>
+</section>
+      <section class="container-fluid" id="contact">
+  <div class="container text-white">
+    <h1>Contact Me</h1>
+
+    <div class="row">
+        <h4>Find me at:</h4>
+        <ul class="list-unstyled">
+          <li><strong>Gmail:</strong> <a href="mailto:santiago.escobar97@gmail.com" class="text-white">santiago.escobar97@gmail.com</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/santiagoxescobar/" target="_blank" class="text-white">linkedin.com/in/santiagoxescobar</a></li>
+        </ul>
+    </div>
+      <div class="row">
+        <h4>Quick Message</h4>
+        <form id="contactForm" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Write your name here...">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-bd-primary">Send</button>
+        </form>
+      </div>
+
+    <div class="row mt-5">
+      <p><em>I'm currently open to freelance and full-time opportunities.</em></p>
+    </div>
+</section>
     </main>
     <footer>
       <div class="containter-fluid" id="footer">
