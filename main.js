@@ -313,13 +313,13 @@ const projects = [
   },
   {
     id: "project_2",
-    image: "https://ibb.co/LdysQJGT",
+    image: "https://i.ibb.co/jkYjVWpC/pending.jpg",
     demoLink: "#",
     repoLink: "#"
   },
   {
     id: "project_3",
-    image: "https://ibb.co/LdysQJGT",
+    image: "https://i.ibb.co/jkYjVWpC/pending.jpg",
     demoLink: "#",
     repoLink: "https://github.com/SantiagoxEscobar/E-Commerce-Backup"
   },
