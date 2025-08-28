@@ -49,10 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  switchLanguage("en"); // o "es" como idioma por defecto
-});
-
 function renderProjects(lang) {
   const container = document.getElementById("projectsContainer");
   container.innerHTML = ""; // Limpiar antes de volver a renderizar

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -27,17 +27,17 @@
         <!-- Contenido colapsable + botón PDF -->
         <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" id="nav_home" aria-current="page" href="#home" data-translate="nav_home">Home</a>
-            <a class="nav-link" href="#about_me" data-translate="nav_about">About Me</a>
-            <a class="nav-link" href="#projects" data-translate="nav_projects">Projects</a>
-            <a class="nav-link" href="#contact" data-translate="nav_contact">Contact</a>
+            <a class="nav-link active" id="nav_home" aria-current="page" href="#home" data-translate="nav_home">Inicio</a>
+            <a class="nav-link" href="#about_me" data-translate="nav_about">Sobre Mí</a>
+            <a class="nav-link" href="#projects" data-translate="nav_projects">Proyectos</a>
+            <a class="nav-link" href="#contact" data-translate="nav_contact">Contacto</a>
           </div>
 
           <div class="ms-lg-auto mt-2 mt-lg-0 d-flex align-items-center gap-2">
             <!-- Botón PDF Resume -->
             <button data-translate="nav_resume_btn" type="button" class="btn btn-bd-primary"
-              onclick="window.open('https://drive.google.com/file/d/1lkhj1IBBLaU78IlckaGWr52Q67Z4v4SJ/view?usp=sharing', '_blank');">
-              PDF Resume
+              onclick="window.open('https://drive.google.com/file/d/1Y7i-DsNu2xnQQysg8t5QNdh9z7M-mRms/view?usp=sharing', '_blank');">
+              CV PDF
             </button>
 
             <!-- Botones de idioma con banderas -->
@@ -63,15 +63,15 @@
           src="https://avatars.githubusercontent.com/u/123908901?s=400&u=485da59224abc2d3e657e6ffd961d02433924a56&v=4"
           alt="profile_picture">
       </div>
-      <h1 data-translate="home_greeting">Hi, my name is <span>Santiago</span></h1>
-      <p data-translate="home_role"><strong>I'm a full stack web developer.</strong> I love programming and creating new things.</p>
+      <h1 data-translate="home_greeting">Hola, mi nombre es <span>Santiago</span></h1>
+      <p data-translate="home_role"><strong>Soy desarrollador web full stack.</strong> Me encanta programar y crear cosas nuevas.</p>
       <button type="button" class="btn btn-bd-primary"
-        onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });" data-translate="btn_view_work">View my work</button>
+        onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });" data-translate="btn_view_work">Ver mi trabajo</button>
 
     </section>
     <section class="container-fluid" id="about_me">
       <div class="row">
-        <h1 data-translate="about_title">About Me</h1>
+        <h1 data-translate="about_title">Sobre Mí</h1>
       </div>
       <div class="card about_me_card text-white">
         <div class="row about_me_row align-items-center">
@@ -83,10 +83,10 @@
           </div>
           <div class="col-sm-12 col-md-6 about_me_col">
             <p data-translate="about_paragraph_1" class="about_me_paragraph">
-              Passionate about web development,
-              I am a Programming Technician from UTN Buenos Aires Argentina,
-              I am currently specializing in NET.
-              I also have experience in DDBB structures and web application architecture layers
+              Apasionado por el desarrollo web,
+              soy Técnico en Programación de la UTN Buenos Aires Argentina,
+              actualmente me especializo en .NET.
+              También tengo experiencia en estructuras de bases de datos y capas de arquitectura web.
             </p>
           </div>
         </div>
@@ -99,22 +99,22 @@
           </div>
           <div class="col-sm-12 col-md-6 about_me_col order-md-1">
             <p data-translate="about_paragraph_2" class="about_me_paragraph">
-              My focus is on continuous learning and constant improvement of my skills,
-              I look for challenges that allow me to grow professionally and contribute to the success of web projects.
+              Mi enfoque está en el aprendizaje continuo y la mejora constante de habilidades.
+              Busco desafíos que me permitan crecer profesionalmente y aportar al éxito de los proyectos.
             </p>
           </div>
         </div>
         <div class="row p-2">
           <div class="col">
             <p class="about_me_paragraph text-center">
-              <strong data-translate="about_lets_explore"> Let's explore the possibilities together! </strong>
+              <strong data-translate="about_lets_explore"> ¡Exploremos las posibilidades juntos! </strong>
             </p>
           </div>
         </div>
       </div>
     </section>
     <section id="skills" class="container-fluid">
-      <h1 data-translate="skills_title">Skills</h1>
+      <h1 data-translate="skills_title">Habilidades</h1>
 
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4">
@@ -190,7 +190,7 @@
 
         <div class="col-lg-4 col-md-12 mb-4">
           <div class="skills-category-card">
-            <h2 data-translate="skills_others">Others</h2>
+            <h2 data-translate="skills_others">Otros</h2>
             <div class="skills-grid">
               <div class="logo">
                 <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
@@ -211,22 +211,22 @@
       </div>
     </section>
     <section class="container-fluid" id="projects">
-      <h1 data-translate="projects_title">Projects</h1>
+      <h1 data-translate="projects_title">Proyectos</h1>
 
       <!-- Contenedor para los proyectos -->
       <div class="row gy-5" id="projectsContainer">
       </div>
 
       <div class="mt-4 text-center">
-        <button id="backToTopBtn" class="btn btn-bd-primary" data-translate="btn_back_top">Back to Top</button>
+        <button id="backToTopBtn" class="btn btn-bd-primary" data-translate="btn_back_top">Volver Arriba</button>
       </div>
     </section>
     <section class="container-fluid" id="contact">
       <div class="container text-white">
-        <h1 data-translate="contact_title">Contact Me</h1>
+        <h1 data-translate="contact_title">Contáctame</h1>
 
         <div class="row">
-          <h4 data-translate="contact_find_me">Find me at:</h4>
+          <h4 data-translate="contact_find_me">Encuéntrame en:</h4>
           <ul class="list-unstyled">
             <li><strong>Gmail:</strong> <a href="mailto:santiago.escobar97@gmail.com"
                 class="text-white">santiago.escobar97@gmail.com</a></li>
@@ -235,26 +235,26 @@
           </ul>
         </div>
         <div class="row">
-          <h4 data-translate="contact_message">Quick Message</h4>
+          <h4 data-translate="contact_message">Mensaje Rápido</h4>
           <form id="contactForm" novalidate>
             <div class="mb-3">
-              <label for="name" class="form-label" data-translate="form_label_name">Your Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Write your name here...">
+              <label for="name" class="form-label" data-translate="form_label_name">Tu Nombre</label>
+              <input type="text" class="form-control" id="name" placeholder="Escribe tu nombre aquí...">
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label" data-translate="form_label_email">Your Email</label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <label for="email" class="form-label" data-translate="form_label_email">Tu Correo</label>
+              <input type="email" class="form-control" id="email" placeholder="tucorreo@ejemplo.com">
             </div>
             <div class="mb-3">
-              <label for="message" class="form-label" data-translate="form_label_message">Message</label>
-              <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..."></textarea>
+              <label for="message" class="form-label" data-translate="form_label_message">Mensaje</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
             </div>
-            <button type="submit" class="btn btn-bd-primary" data-translate="form_btn_send">Send</button>
+            <button type="submit" class="btn btn-bd-primary" data-translate="form_btn_send">Enviar</button>
           </form>
         </div>
 
         <div class="row mt-5">
-          <p><em data-translate="contact_note">I'm currently open to freelance and full-time opportunities.</em></p>
+          <p><em data-translate="contact_note">Actualmente estoy abierto a oportunidades freelance y full-time.</em></p>
         </div>
     </section>
   </main>
