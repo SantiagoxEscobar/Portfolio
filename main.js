@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Inicializar proyectos en español por defecto
+  renderProjects('es');
+
   // BACK TO TOP button
   const backToTopBtn = document.getElementById('backToTopBtn');
   if (backToTopBtn) {
